@@ -1,6 +1,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/data,python,jupyternotebooks,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=data,python,jupyternotebooks,macos
 
+##################
+# intellij files #
+##################
+*.iws
+*.iml
+*.ipr
+!.idea/runConfigurations
+.idea/**
+.idea/*.*
+
 ### Data ###
 *.csv
 *.dat
