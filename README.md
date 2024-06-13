@@ -26,6 +26,14 @@ When searching for accommodations, users face an overwhelming number of choices.
 ## Project Goal
 The goal of this project is to develop and evaluate supervised machine learning and deep learning models that can rank hotel search results by relevance, thereby improving user satisfaction and booking rates.
 
+## Evaluation Metric
+
+Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that compares rankings to an ideal order where all relevant items are at top of the list
+
+| ![NDCG1](./reports/figures/NDCG1.png) | ![NDCG2](./reports/figures/NDCG2.png) |
+|:----------------------------------------:|:----------------------------------------:|
+| Figure 1: NDCG shows how relevance of items decreases as their position in the ranking increases         | Figure 2: NDCG as a ranking quality metric         |
+
 ## Dataset Description
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
