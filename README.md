@@ -129,6 +129,11 @@ https://github.com/egronskaya/Super-Resolution-for-Satellite-Imagery (Students' 
 
 Both projects were done in Colab. 
 
+#### **Contributing Members**
 
+- __[Guillem Montoya](https://www.linkedin.com/in/guillem-montoya-bb0284195/)__
+- __[Kunal Sharma](https://www.linkedin.com/in/drkunalsharma/)__
+- __[Lorenz Schmid](https://www.linkedin.com/in/lorenz-schmid-40801b22b/)__
+- __[Asterio Raptis](https://www.linkedin.com/in/asterios-raptis-46824a31/)__
 
 
