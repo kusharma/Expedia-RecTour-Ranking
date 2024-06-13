@@ -56,8 +56,14 @@ Our evaluation showed the following:
 - **Decision Tree-based Models:** These models effectively identified key features for the ranking task but did not achieve the highest NDCG scores.
 - **AllRank Model:** This model performed best in our tests, though it did not yet match the NDCG score of the previously used model.
 
+
+
 The results are summarized as follows:
 - **NDCG Scores:** The allRank model showed superior performance in placing the most relevant properties higher in the search results.
+
+![Comparison of NDCG@30 Scores for different Loss Functions](./reports/figures/LossfunctionResult.png)
+The DNN+SA model generally outperforms the standard DNN model, highlighting the benefit of incorporating Self-Attention for ranking tasks in the Expedia RecTour dataset.
+
 
 ## Future Work
 We have outlined several future steps to enhance our model:
