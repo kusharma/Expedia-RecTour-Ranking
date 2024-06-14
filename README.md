@@ -38,7 +38,7 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
       <p style="text-align: center;">Figure 1: NDCG as a ranking quality metric</p>
     </td>
     <td style="width: 40%;">
-      <img src="./reports/figures/NDCG2.png" alt="NDCG2" style="width: 100%;" />
+      <img src="./reports/figures/NDCG2.png" alt="NDCG2" style="width:50%;" />
       <p style="text-align: center;">Figure 2: NDCG shows how relevance of items decreases as their position in the ranking increases</p>
     </td>
   </tr>
