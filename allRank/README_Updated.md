@@ -10,8 +10,10 @@ There are 2 ways to run allRank, with and without docker.
 
 ## Without docker by creating conda virtual environment using environment_allRank.yml
 
+```bash
 conda env create -f environment_allRank.yml
 conda activate environment_allrank
+```
 
 To train your own model, configure your experiment in ```config.json``` file and run  
 

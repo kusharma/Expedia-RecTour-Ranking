@@ -68,9 +68,12 @@ We then explored the allRank model, an open-source transformer-based model that 
 ### Running allRank model
 To run the AllRank model, first navigate to the allRank directory. For instructions on running without Docker, refer to READEME_Updated.md. For instructions on running with Docker, refer to README.md.
 
-### Running other three models (LightGBM, XGBRanker, neural network)
+### Running other three models (LightGBM, XGBRanker, neural network) using environment_decisiontree.yml
+
+```bash
 conda env create -f environment_decisiontree.yml
-conda activate environment_decisiontree.yml
+conda activate environment_decisiontree
+```
 
 ## Results
 Our evaluation showed the following:
