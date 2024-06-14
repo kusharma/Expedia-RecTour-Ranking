@@ -38,12 +38,12 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 ## Dataset Description
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
-| <img src="./reports/figures/correlation.png" alt="Correlation Plot" width="600" height="400"> |
+| <img src="./reports/figures/correlation.png" alt="Correlation Plot" width="500" height="500"> |
 |:--------------------------------------------------------------------------------------------------------:|
 | **Figure 3: Correlation Matrix**                                                      |
 
 
-**Figure 2: Key Correlations in Tabular Form**
+**Table1: Key Correlations**
 
 | Correlation Type      | Features Involved               | Description                                                            |
 |-----------------------|---------------------------------|------------------------------------------------------------------------|
