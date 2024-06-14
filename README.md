@@ -16,8 +16,10 @@ Expedia Group, a prominent online travel agency, streamlines trip planning by pr
    - [Deep Learning Models](#deep-learning-models)
 5. [Results](#results)
 6. [Future Work](#future-work)
-8. [Team Members](#team-members)
-9. [Blog Post](#blog-post)
+7. [Team Members](#team-members)
+8. [Blog Post](#blog-post)
+9. [Tools Used](#tools-used)
+
 
 ## Problem Statement
 When searching for accommodations, users face an overwhelming number of choices. For example, searching for a "4-star hotel for three adults in Geneva in early May 2024" can yield hundreds of results. Without sorting options based on user-specified features like star rating or number of guests, search times can extend, and bookings can decrease, countering the platform’s objective to simplify travel arrangements.
@@ -47,9 +49,9 @@ Refer to doc "Feature_Selection_Documentation.md" for further details
 - Excluded Features: Features used solely for relevance labeling and those with majority null values.
 
 ## Feature engineering based upon business logic
-Notebook "FeatureEngineeringNewTargetRelevances_KS.ipynb," creates custom features to enhance target relevance. Key steps include:
+Notebook "FeatureEngineeringNewTargetRelevances.ipynb," creates custom features to enhance target relevance. Key steps include:
 
-Relevance Calculation: Based on user clicks and transactions.
+- Relevance Calculation: Based on user clicks and transactions.
 - Categorization: For price buckets and review ratings.
 - Combined Features: Integrates clicks, price, ratings, and review counts.
 - Target Encoding: Encodes categorical based upon selected/targetrelevance.
@@ -73,8 +75,6 @@ We then explored the allRank model, an open-source transformer-based model that 
 Our evaluation showed the following:
 - **Decision Tree-based Models:** These models effectively identified key features for the ranking task but did not achieve the highest NDCG scores.
 - **AllRank Model:** This model performed best in our tests, though it did not yet match the NDCG score of the previously used model.
-
-
 
 The results are summarized as follows:
 - **NDCG Scores:** The allRank model showed superior performance in placing the most relevant properties higher in the search results.
@@ -100,6 +100,33 @@ We have outlined several future steps to enhance our model:
 ## Blog Post
 For more details, please read our [blog post](https://academy.constructor.org/blog/data-science-capstone-projects-batch-25).
 
+## Tools Used
+
+- **Pandas** 🐼: Data manipulation and analysis  
+  ![Pandas](https://pandas.pydata.org/static/img/pandas_white.svg)
+- **NumPy** 🔢: Numerical computing  
+  ![NumPy](https://numpy.org/images/logo.svg)
+- **Matplotlib** 📊: Plotting and visualization  
+  ![Matplotlib](https://matplotlib.org/_static/logo2_compressed.svg)
+- **tqdm** ⏳: Progress bars for loops  
+  ![tqdm](https://github.com/tqdm/tqdm/raw/master/images/logo/tqdm_logo.png)
+- **timeit** ⏱️: Time measuring tool  
+  ⏱️
+- **hashlib** 🔒: Secure hash and message digest  
+  🔒
+- **Dask** 🏭: Parallel computing with pandas-like syntax  
+  ![Dask](https://docs.dask.org/en/stable/_images/dask_horizontal.svg)
+- **gc** 🗑️: Garbage collection interface  
+  🗑️
+
+### Ranking Algorithms Implemented
+
+- **allRank** 🎯: Learning to rank tool from Allegro  
+  ![allRank](https://allrank.readthedocs.io/en/latest/_images/logo_white.png)
+- **XGBRanker** 🌲: XGBoost ranking  
+  ![XGBoost](https://seeklogo.com/images/X/xgboost-logo-79A6D6A5A8-seeklogo.com.png)
+- **LightGBM** 💡: Gradient boosting framework  
+  ![LightGBM](https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg)
 
 
 
