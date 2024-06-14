@@ -43,6 +43,7 @@ To address the ranking challenge, we employed various machine learning and deep 
 ## Machine learning libraries used
 - __ XGBoost
 - __ LightGBM
+- __ ScratchNN
 - __ allRank
 
 ### Machine Learning Models
