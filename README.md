@@ -102,31 +102,21 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 
 ## Tools Used
 
-- **Pandas** 🐼: Data manipulation and analysis  
-  <img src="https://pandas.pydata.org/static/img/pandas_white.svg" alt="Pandas" width="100"/>
-- **NumPy** 🔢: Numerical computing  
-  <img src="https://numpy.org/images/logo.svg" alt="NumPy" width="100"/>
-- **Matplotlib** 📊: Plotting and visualization  
-  <img src="https://matplotlib.org/_static/logo2_compressed.svg" alt="Matplotlib" width="100"/>
-- **tqdm** ⏳: Progress bars for loops  
-  <img src="https://github.com/tqdm/tqdm/raw/master/images/logo/tqdm_logo.png" alt="tqdm" width="100"/>
-- **timeit** ⏱️: Time measuring tool  
-  ⏱️
-- **hashlib** 🔒: Secure hash and message digest  
-  🔒
-- **Dask** 🏭: Parallel computing with pandas-like syntax  
-  <img src="https://docs.dask.org/en/stable/_images/dask_horizontal.svg" alt="Dask" width="100"/>
-- **gc** 🗑️: Garbage collection interface  
-  🗑️
+- **Pandas** 🐼: Data manipulation and analysis
+- **NumPy** 🔢: Numerical computing
+- **Matplotlib** 📊: Plotting and visualization
+- **tqdm** ⏳: Progress bars for loops
+- **timeit** ⏱️: Time measuring tool
+- **hashlib** 🔒: Secure hash and message digest
+- **Dask** 🏭: Parallel computing with pandas-like syntax
+- **gc** 🗑️: Garbage collection interface
 
 ### Ranking Algorithms Implemented
 
-- **allRank** 🎯: Learning to rank tool from Allegro  
-  <img src="https://allrank.readthedocs.io/en/latest/_images/logo_white.png" alt="allRank" width="100"/>
-- **XGBRanker** 🌲: XGBoost ranking  
-  <img src="https://seeklogo.com/images/X/xgboost-logo-79A6D6A5A8-seeklogo.com.png" alt="XGBoost" width="100"/>
-- **LightGBM** 💡: Gradient boosting framework  
-  <img src="https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg" alt="LightGBM" width="100"/>
+- **allRank** 🎯: Learning to rank tool from Allegro
+- **XGBRanker** 🌲: XGBoost ranking
+- **LightGBM** 💡: Gradient boosting framework
+
 
 
 
