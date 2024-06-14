@@ -31,6 +31,20 @@ The goal of this project is to develop and evaluate supervised machine learning 
 
 Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that compares rankings to an ideal order where all relevant items are at top of the list
 
+<table>
+  <tr>
+    <td style="width: 60%;">
+      <img src="./reports/figures/NDCG1.png" alt="NDCG1" style="width: 100%;" />
+      <p style="text-align: center;">Figure 1: NDCG as a ranking quality metric</p>
+    </td>
+    <td style="width: 40%;">
+      <img src="./reports/figures/NDCG2.png" alt="NDCG2" style="width: 100%;" />
+      <p style="text-align: center;">Figure 2: NDCG shows how relevance of items decreases as their position in the ranking increases</p>
+    </td>
+  </tr>
+</table>
+
+
 | ![NDCG1](./reports/figures/NDCG1.png) | ![NDCG2](./reports/figures/NDCG2.png) |
 |:----------------------------------------:|:----------------------------------------:|
 | Figure 1:  NDCG as a ranking quality metric         | Figure 2:     NDCG shows how relevance of items decreases as their position in the ranking increases    |
