@@ -6,12 +6,11 @@ This is an updateed README file modified from original README.md from  Allegro a
 
 To start, we need train.txt, test.txt and valid.txt created using 'dump_svmlight_file command' in FeatureSelection notebook
 
-
 There are 2 ways to run allRank, with and without docker.
 
-## Without docker by creating conda virtual environment
+## Without docker by creating conda virtual environment using environment_allRank.yml
 
-conda create env environment_allrank using environment_allRank file.
+conda env create -f environment_allRank.yml
 conda activate environment_allrank
 
 To train your own model, configure your experiment in ```config.json``` file and run  
