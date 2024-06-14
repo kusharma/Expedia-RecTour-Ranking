@@ -56,8 +56,6 @@ The Expedia RecTour research dataset used in this project includes 1 million sea
 
 
 
-
-
 ## Data preprocessing and Feature selection
 
 Refer to doc "Feature_Selection_Documentation.md" within 'docs' folder for further details
@@ -96,6 +94,22 @@ conda activate environment_decisiontree
 ```
 
 ## Results
+
+### Feature Importance from XGBRanker
+| ![Feature Importance Plot](./reports/figures/feature_importance.png) |
+|:---------------------------------------------------------------------:|
+| **Figure 3: Feature Importance from XGBRanker**                      |
+
+The feature importance plot above, generated using XGBRanker, highlights the significance of various features in the ranking task. The key features identified include:
+
+- **prop_id:** The property identifier is the most important feature, indicating that certain properties inherently rank higher based on past data.
+- **review_count:** The number of reviews a property has received plays a significant role in its ranking.
+- **destination_id:** The destination's identifier is also crucial, suggesting location-based preferences.
+- **geo_location_country:** The country of the user's location affects the ranking, likely due to regional preferences.
+- **star_rating:** The star rating of properties is important, reflecting user preferences for quality.
+- **price_bucket:** The price category of properties influences their ranking, aligning with budget considerations.
+
+These features are essential for improving the performance of the allRank model by providing relevant information for accurately ranking properties.
 Our evaluation showed the following:
 - **Decision Tree-based Models:** These models effectively identified key features for the ranking task but did not achieve the highest NDCG scores.
 - **AllRank Model:** This model performed best in our tests, though it did not yet match the NDCG score of the previously used model.
