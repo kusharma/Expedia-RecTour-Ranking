@@ -40,19 +40,20 @@ The Expedia RecTour research dataset used in this project includes 1 million sea
 
 | ![Correlation Plot](./reports/figures/correlation.png) |
 |:-----------------------------------------------------:|
-| **Figure 3: Correlation Matrix**                      |
+| **Figure 1: Correlation Matrix**                      |
 
-| **Figure 4: Key Correlations in Tabular Form**        |
-|:-----------------------------------------------------:|
-| **Correlation Type** | **Features Involved**           | **Description**                                                         |
-|----------------------|---------------------------------|-------------------------------------------------------------------------|
-| High Correlation     | Review Count, Review Rating     | Properties with more reviews tend to have consistent ratings.            |
-| High Correlation     | Length of Stay, Booking Window  | Longer stays are planned further in advance.                             |
-| Moderate Correlation | Star Rating, Review Rating      | Higher star ratings are generally associated with better reviews.        |
-| Moderate Correlation | Price Bucket, Star Rating       | Higher star ratings are associated with higher price buckets.            |
-| Low/No Correlation   | Is Mobile, Most Other Variables | Mobile bookings are not strongly related to other features.              |
-| Low/No Correlation   | Child Count, Most Other Variables| The number of children doesn't significantly impact other features.       |
-| Negative Correlation | Is Free Cancellation, Price Bucket | Higher-priced properties are less likely to offer free cancellation.    |
+**Figure 2: Key Correlations in Tabular Form**
+
+| Correlation Type      | Features Involved               | Description                                                            |
+|-----------------------|---------------------------------|------------------------------------------------------------------------|
+| **High Correlation**  | Review Count, Review Rating     | Properties with more reviews tend to have consistent ratings.           |
+| **High Correlation**  | Length of Stay, Booking Window  | Longer stays are planned further in advance.                            |
+| **Moderate Correlation** | Star Rating, Review Rating     | Higher star ratings are generally associated with better reviews.       |
+| **Moderate Correlation** | Price Bucket, Star Rating       | Higher star ratings are associated with higher price buckets.           |
+| **Low/No Correlation** | Is Mobile, Most Other Variables | Mobile bookings are not strongly related to other features.             |
+| **Low/No Correlation** | Child Count, Most Other Variables | The number of children doesn't significantly impact other features.      |
+| **Negative Correlation** | Is Free Cancellation, Price Bucket | Higher-priced properties are less likely to offer free cancellation.     |
+
 
 
 
