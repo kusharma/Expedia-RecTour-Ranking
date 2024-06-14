@@ -95,12 +95,13 @@ conda activate environment_decisiontree
 
 ## Results
 
-### Feature Importance from XGBRanker
-| ![Feature Importance Plot](./reports/figures/feature_importance.png) |
-|:---------------------------------------------------------------------:|
-| **Figure 3: Feature Importance from XGBRanker**                      |
+### Feature Importance from decision tree based model
 
-The feature importance plot above, generated using XGBRanker, highlights the significance of various features in the ranking task. The key features identified include:
+The feature importance plot below, generated using XGBRanker, highlights the significance of various features in the ranking task. The key features identified include:
+
+| ![Feature Importance Plot](./reports/figures/feature_importance.png) | ![Model Comparison Plot](./reports/figures/model_comparison.png) |
+|:--------------------------------------------------------------------:|:----------------------------------------------------------------:|
+| **Figure 5: Feature Importance from XGBRanker**                      | **Figure 6: NDCG Score Comparison Across Models**                |
 
 - **prop_id:** The property identifier is the most important feature, indicating that certain properties inherently rank higher based on past data.
 - **review_count:** The number of reviews a property has received plays a significant role in its ranking.
@@ -109,13 +110,17 @@ The feature importance plot above, generated using XGBRanker, highlights the sig
 - **star_rating:** The star rating of properties is important, reflecting user preferences for quality.
 - **price_bucket:** The price category of properties influences their ranking, aligning with budget considerations.
 
-These features are essential for improving the performance of the allRank model by providing relevant information for accurately ranking properties.
-Our evaluation showed the following:
-- **Decision Tree-based Models:** These models effectively identified key features for the ranking task but did not achieve the highest NDCG scores.
-- **AllRank Model:** This model performed best in our tests, though it did not yet match the NDCG score of the previously used model.
+These features are essential for improving the performance of the AllRank model by providing relevant information for accurately ranking properties.
 
-The results are summarized as follows:
-- **NDCG Scores:** The allRank model showed superior performance in placing the most relevant properties higher in the search results.
+### Figure 2: NDCG Score Comparison Across Models
+The NDCG score comparison plot shows the performance of different models across various ranking positions (K5, K10, K20, K30). Key observations include:
+
+- **AllRank Neural Network:** This model consistently performs the best across all ranking positions, achieving the highest NDCG scores.
+- **XGBRanker and LGBMRanker:** These models show competitive performance, with slightly lower NDCG scores compared to the AllRank model.
+- **Scratch Neural Network:** This model shows improvement with increasing ranking positions but generally performs lower than the tree-based models and AllRank.
+
+The plot clearly demonstrates the effectiveness of the AllRank model in achieving higher NDCG scores, indicating better ranking of relevant properties.
+
 
 ![Comparison of NDCG@30 Scores for different Loss Functions](./reports/figures/LossfunctionResult.png)
 The DNN+SA model generally outperforms the standard DNN model, highlighting the benefit of incorporating Self-Attention for ranking tasks in the Expedia RecTour dataset.
