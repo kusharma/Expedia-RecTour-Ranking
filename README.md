@@ -38,6 +38,25 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 ## Dataset Description
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
+| ![Correlation Plot](./reports/figures/correlation.png) |
+|:-----------------------------------------------------:|
+| **Figure 3: Correlation Matrix**                      |
+
+| **Figure 4: Key Correlations in Tabular Form**        |
+|:-----------------------------------------------------:|
+| **Correlation Type** | **Features Involved**           | **Description**                                                         |
+|----------------------|---------------------------------|-------------------------------------------------------------------------|
+| High Correlation     | Review Count, Review Rating     | Properties with more reviews tend to have consistent ratings.            |
+| High Correlation     | Length of Stay, Booking Window  | Longer stays are planned further in advance.                             |
+| Moderate Correlation | Star Rating, Review Rating      | Higher star ratings are generally associated with better reviews.        |
+| Moderate Correlation | Price Bucket, Star Rating       | Higher star ratings are associated with higher price buckets.            |
+| Low/No Correlation   | Is Mobile, Most Other Variables | Mobile bookings are not strongly related to other features.              |
+| Low/No Correlation   | Child Count, Most Other Variables| The number of children doesn't significantly impact other features.       |
+| Negative Correlation | Is Free Cancellation, Price Bucket | Higher-priced properties are less likely to offer free cancellation.    |
+
+
+
+
 ## Data preprocessing and Feature selection
 
 Refer to doc "Feature_Selection_Documentation.md" within 'docs' folder for further details
