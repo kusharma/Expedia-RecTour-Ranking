@@ -113,9 +113,9 @@ The key features identified include:
 
 These features are essential for improving the performance of the AllRank model by providing relevant information for accurately ranking properties.
 
-| ![Model Comparison Plot](./reports/figures/model_comparison.png) |
-|:----------------------------------------------------------------:|
-| **Figure 6: NDCG Score Comparison Across Models**                |
+| <img src="./reports/figures/model_comparison.png" alt="Model Comparison Plot" width="600" height="400"> |
+|:--------------------------------------------------------------------------------------------------------:|
+| **Figure 6: NDCG Score Comparison Across Models**                                                       |
 
 The NDCG score comparison plot shows the performance of different models across various ranking positions (K5, K10, K20, K30). Key observations include:
 
