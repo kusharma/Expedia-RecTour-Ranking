@@ -17,7 +17,7 @@ Expedia Group, a prominent online travel agency, streamlines trip planning by pr
 5. [Results](#results)
 6. [Future Work](#future-work)
 7. [Team Members](#team-members)
-8. [Blog Post](#blog-post)
+8. [Additional Resources](# Dive deeeper into Our Project)
 9. [Tools Used](#tools-used)
 
 
@@ -33,14 +33,14 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 
 | ![NDCG1](./reports/figures/NDCG1.png) | ![NDCG2](./reports/figures/NDCG2.png) |
 |:----------------------------------------:|:----------------------------------------:|
-| Figure 1: NDCG shows how relevance of items decreases as their position in the ranking increases         | Figure 2: NDCG as a ranking quality metric         |
+| Figure 1:  NDCG as a ranking quality metric         | Figure 2:     NDCG shows how relevance of items decreases as their position in the ranking increases    |
 
 ## Dataset Description
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
 ## Data preprocessing and Feature selection
 
-Refer to doc "Feature_Selection_Documentation.md" for further details
+Refer to doc "Feature_Selection_Documentation.md" within 'docs' folder for further details
  
 - Categorical Features: Target encoding for high-cardinality features.
 - Binary Features: One-hot encoding and retention of relevant indicators.
@@ -94,8 +94,8 @@ We have outlined several future steps to enhance our model:
 - **Feature Engineering:** Implementing various relevance metrics aligned with business objectives to improve model accuracy further.
 
 
-## Blog Post
-For more details, please read our [blog post](https://academy.constructor.org/blog/data-science-capstone-projects-batch-25).
+## Dive deeeper into Our Project
+For more details, please read our [blog post](https://academy.constructor.org/blog/data-science-capstone-projects-batch-25) and watch our [presentation video](https://drive.google.com/file/d/1_bgkM8wxBa3Y_7WJC22qFjH5LKMTGMXR/view).
 
 ## Tools Used
 
