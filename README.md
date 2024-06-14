@@ -90,13 +90,6 @@ We have outlined several future steps to enhance our model:
 - **Feature Engineering:** Implementing various relevance metrics aligned with business objectives to improve model accuracy further.
 
 
-#### **Contributing Members**
-
-- __[Guillem Montoya](https://www.linkedin.com/in/guillem-montoya-bb0284195/)__
-- __[Kunal Sharma](https://www.linkedin.com/in/drkunalsharma/)__
-- __[Lorenz Schmid](https://www.linkedin.com/in/lorenz-schmid-40801b22b/)__
-- __[Asterios Raptis](https://www.linkedin.com/in/asterios-raptis-46824a31/)__
-
 ## Blog Post
 For more details, please read our [blog post](https://academy.constructor.org/blog/data-science-capstone-projects-batch-25).
 
@@ -118,7 +111,12 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 - **XGBRanker** 🌲: XGBoost ranking
 - **LightGBM** 💡: Gradient boosting framework
 
+#### **Contributing Members**
 
+- __[Guillem Montoya](https://www.linkedin.com/in/guillem-montoya-bb0284195/)__
+- __[Kunal Sharma](https://www.linkedin.com/in/drkunalsharma/)__
+- __[Lorenz Schmid](https://www.linkedin.com/in/lorenz-schmid-40801b22b/)__
+- __[Asterios Raptis](https://www.linkedin.com/in/asterios-raptis-46824a31/)__
 
 
 
