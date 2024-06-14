@@ -110,10 +110,11 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 - **hashlib** 🔒: Secure hash and message digest
 - **Dask** 🏭: Parallel computing with pandas-like syntax
 - **gc** 🗑️: Garbage collection interface
+- **PyTorch** 🔥: Deep learning framework used in the allRank ranking algorithm
 
 ### Ranking Algorithms Implemented
 
-- **allRank** 🎯: Learning to rank tool from Allegro
+- **allRank** 🎯: Learning to rank tool from Allegro (implemented with Pytorch 🔥)
 - **XGBRanker** 🌲: XGBoost ranking
 - **LightGBM** 💡: Gradient boosting framework
 
