@@ -127,7 +127,7 @@ The NDCG score comparison plot shows the performance of different models across 
 The plot clearly demonstrates the effectiveness of the AllRank model in achieving higher NDCG scores, indicating better ranking of relevant properties.
 
 
-![Comparison of NDCG@30 Scores for different Loss Functions](./reports/figures/LossfunctionResult.png){ width=75%; height: auto; }
+![Comparison of NDCG@30 Scores for different Loss Functions](./reports/figures/LossfunctionResult.png){ width=60%; height: auto; }
 
 The deep neural network & self attention (DNN+SA) based allRank  model generally outperforms the standard DNN model, highlighting the benefit of incorporating Self-Attention for ranking tasks in the Expedia RecTour dataset.
 
