@@ -161,7 +161,9 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 - **Dask** 🏭: Parallel computing with pandas-like syntax
 - **gc** 🗑️: Garbage collection interface
 - **Scikit-learn** 📘: Machine learning library for Python, used for building and evaluating models
-- **PyTorch** 🔥: Deep learning framework used in the allRank ranking algorithm
+- **PyTorch** 🔥: Deep learning framework used in the allRank ranking algorithm.
+- **TensorFlow** 🌟: Open-source deep learning framework used for various machine learning and deep learning tasks.
+
 
 ### Ranking Algorithms Implemented
 
