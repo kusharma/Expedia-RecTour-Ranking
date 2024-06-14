@@ -10,15 +10,17 @@ Expedia Group, a prominent online travel agency, streamlines trip planning by pr
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
 2. [Project Goal](#project-goal)
-3. [Dataset Description](#dataset-description)
-4. [Approach and Methodology](#approach-and-methodology)
+3. [Evaluation Metric](#evaluation-metric)
+4. [Dataset Description and EDA](#dataset-description-and-eda)
+5. [Data Preparation and Feature Engineering](#data-preparation-and-feature-engineering)
+6. [Model Training](#model-training)
    - [Machine Learning Models](#machine-learning-models)
    - [Deep Learning Models](#deep-learning-models)
-5. [Results](#results)
-6. [Future Work](#future-work)
-7. [Team Members](#team-members)
-8. [Additional Resources](# Dive deeeper into Our Project)
-9. [Tools Used](#tools-used)
+7. [Results](#results)
+8. [Future Work](#future-work)
+9. [Additional Resources](#additional-resources)
+10. [Tools Used](#tools-used)
+11. [Team Members](#team-members)
 
 
 ## Problem Statement
@@ -35,7 +37,7 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 |:----------------------------------------:|:----------------------------------------:|
 | Figure 1:  NDCG as a ranking quality metric         | Figure 2:     Relevance decreases with rank    |
 
-## Dataset Description
+## Dataset Description and EDA
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. Let's look into booking data and clicks
 
 | ![Booking Window](./reports/figures/booking_window.png) | ![Number of Clicks](./reports/figures/clicks.png) |
@@ -65,7 +67,7 @@ How are different amenitites influencing the user behaviour. Let's check this wi
 
 We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
-## Data preprocessing and Feature selection
+## Data Preparation and Feature Engineering
 
 Refer to doc "Feature_Selection_Documentation.md" within 'docs' folder for further details
  
@@ -75,7 +77,7 @@ Refer to doc "Feature_Selection_Documentation.md" within 'docs' folder for furth
 - Numerical Features: Standard scaling applied.
 - Excluded Features: Features used solely for relevance labeling and those with majority null values.
 
-## Feature engineering based upon business logic
+### Feature engineering based upon business logic
 Notebook "FeatureEngineeringNewTargetRelevances.ipynb," creates custom features to enhance target relevance. Key steps include:
 
 - Relevance Calculation: Based on user clicks and transactions.
@@ -86,7 +88,7 @@ Notebook "FeatureEngineeringNewTargetRelevances.ipynb," creates custom features 
 
 The saved data can be used for next steps for model training and evaluation
 
-## Machine Learning and Deep Learning Models 
+## Model Training 
 We began with decision tree-based models such as LightGBM and XGBRanker. These models helped us identify key features relevant to the ranking task. Then we explored the allRank model, an open-source transformer-based model that enhances ranking by understanding the context of other properties. This model demonstrated the best performance on the Expedia RecTour dataset, leveraging a self-attention mechanism to learn item scores in the context of all other items present in the list.
 
 ### Running allRank model
@@ -143,7 +145,7 @@ We have outlined several future steps to enhance our model:
 - **Feature Engineering:** Implementing various relevance metrics aligned with business objectives to improve model accuracy further.
 
 
-## Dive deeeper into Our Project
+## Additional Resources
 For more details, please read our [blog post](https://academy.constructor.org/blog/data-science-capstone-projects-batch-25) and watch our [presentation video](https://drive.google.com/file/d/1_bgkM8wxBa3Y_7WJC22qFjH5LKMTGMXR/view).
 
 ## Tools Used
@@ -163,11 +165,11 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 
 ### Ranking Algorithms Implemented
 
-- **allRank** 🎯: Learning to rank tool from Allegro (implemented with Pytorch 🔥)
+- **allRank** 🎯: Learning to rank library from Allegro (implemented with Pytorch 🔥)
 - **XGBRanker** 🌲: XGBoost ranking
 - **LightGBM** 💡: Gradient boosting framework
 
-#### **Contributing Members**
+## Team Members
 
 - __[Guillem Montoya](https://www.linkedin.com/in/guillem-montoya-bb0284195/)__
 - __[Kunal Sharma](https://www.linkedin.com/in/drkunalsharma/)__
