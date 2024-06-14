@@ -4,9 +4,6 @@
 ## Introduction
 This document provides details on the pre-processing and selection of features used in the project.
 
-## Features that could be dropped/no variance
-- **Note**: Features with no variance are marked in red in our detailed documentation.
-
 ## Categorical Features (High number of categories)
 - **Point of Sale**: `point_of_sale` target-encoded with 81 unique values.
 - **Geographical Location**: `geo_location_country` target-encoded with 134 unique values.
