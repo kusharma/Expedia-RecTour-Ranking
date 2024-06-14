@@ -103,30 +103,31 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 ## Tools Used
 
 - **Pandas** 🐼: Data manipulation and analysis  
-  ![Pandas](https://pandas.pydata.org/static/img/pandas_white.svg)
+  <img src="https://pandas.pydata.org/static/img/pandas_white.svg" alt="Pandas" width="100"/>
 - **NumPy** 🔢: Numerical computing  
-  ![NumPy](https://numpy.org/images/logo.svg)
+  <img src="https://numpy.org/images/logo.svg" alt="NumPy" width="100"/>
 - **Matplotlib** 📊: Plotting and visualization  
-  ![Matplotlib](https://matplotlib.org/_static/logo2_compressed.svg)
+  <img src="https://matplotlib.org/_static/logo2_compressed.svg" alt="Matplotlib" width="100"/>
 - **tqdm** ⏳: Progress bars for loops  
-  ![tqdm](https://github.com/tqdm/tqdm/raw/master/images/logo/tqdm_logo.png)
+  <img src="https://github.com/tqdm/tqdm/raw/master/images/logo/tqdm_logo.png" alt="tqdm" width="100"/>
 - **timeit** ⏱️: Time measuring tool  
   ⏱️
 - **hashlib** 🔒: Secure hash and message digest  
   🔒
 - **Dask** 🏭: Parallel computing with pandas-like syntax  
-  ![Dask](https://docs.dask.org/en/stable/_images/dask_horizontal.svg)
+  <img src="https://docs.dask.org/en/stable/_images/dask_horizontal.svg" alt="Dask" width="100"/>
 - **gc** 🗑️: Garbage collection interface  
   🗑️
 
 ### Ranking Algorithms Implemented
 
 - **allRank** 🎯: Learning to rank tool from Allegro  
-  ![allRank](https://allrank.readthedocs.io/en/latest/_images/logo_white.png)
+  <img src="https://allrank.readthedocs.io/en/latest/_images/logo_white.png" alt="allRank" width="100"/>
 - **XGBRanker** 🌲: XGBoost ranking  
-  ![XGBoost](https://seeklogo.com/images/X/xgboost-logo-79A6D6A5A8-seeklogo.com.png)
+  <img src="https://seeklogo.com/images/X/xgboost-logo-79A6D6A5A8-seeklogo.com.png" alt="XGBoost" width="100"/>
 - **LightGBM** 💡: Gradient boosting framework  
-  ![LightGBM](https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg)
+  <img src="https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg" alt="LightGBM" width="100"/>
+
 
 
 
