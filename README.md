@@ -86,11 +86,8 @@ Notebook "FeatureEngineeringNewTargetRelevances.ipynb," creates custom features 
 
 The saved data can be used for next steps for model training and evaluation
 
-## Machine Learning Models
-We began with decision tree-based models such as LightGBM and XGBRanker. These models helped us identify key features relevant to the ranking task.
-
-## Deep Learning Models
-We then explored the allRank model, an open-source transformer-based model that enhances ranking by understanding the context of other properties. This model demonstrated the best performance on the Expedia RecTour dataset, leveraging a self-attention mechanism to learn item scores in the context of all other items present in the list.
+## Machine Learning and Deep Learning Models 
+We began with decision tree-based models such as LightGBM and XGBRanker. These models helped us identify key features relevant to the ranking task. Then we explored the allRank model, an open-source transformer-based model that enhances ranking by understanding the context of other properties. This model demonstrated the best performance on the Expedia RecTour dataset, leveraging a self-attention mechanism to learn item scores in the context of all other items present in the list.
 
 ### Running allRank model
 To run the AllRank model, first navigate to the allRank directory. For instructions on running without Docker, refer to READEME_Updated.md. For instructions on running with Docker, refer to README.md.
@@ -132,8 +129,7 @@ The NDCG score comparison plot shows the performance of different models across 
 - **XGBRanker and LGBMRanker:** These models show competitive performance, with slightly lower NDCG scores compared to the AllRank model.
 - **Scratch Neural Network:** This model shows improvement with increasing ranking positions but generally performs lower than the tree-based models and AllRank.
 
-The plot clearly demonstrates the effectiveness of the AllRank model in achieving higher NDCG scores, indicating better ranking of relevant properties.
-
+After identifying AllRank as the best model, we further explored its performance by testing different loss functions to optimize the NDCG metric.
 
 <img src="./reports/figures/LossfunctionResult.png" alt="Comparison of NDCG@30 Scores for different Loss Functions" style="width: 60%; height: auto;">
 
