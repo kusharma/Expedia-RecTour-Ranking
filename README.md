@@ -46,10 +46,10 @@ To address the ranking challenge, we employed various machine learning and deep 
 Notebook, "FeatureEngineeringNewTargetRelevances_KS.ipynb," creates custom features to enhance target relevance. Key steps include:
 
 Relevance Calculation: Based on user clicks and transactions.
-Categorization: For price buckets and review ratings.
-Combined Features: Integrates clicks, price, ratings, and review counts.
-Target Encoding: Encodes categorical features relative to relevance.
-Feature Selection: Chooses and retains the most relevant features.
+- Categorization: For price buckets and review ratings.
+- Combined Features: Integrates clicks, price, ratings, and review counts.
+- Target Encoding: Encodes categorical based upon selected/target relevance.
+- Feature Selection: Chooses and retains the most relevant features.
 
 The saved data can be used for next steps for model training and evaluation
 
