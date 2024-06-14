@@ -97,11 +97,12 @@ conda activate environment_decisiontree
 
 ### Feature Importance from decision tree based model
 
-The feature importance plot below, generated using XGBRanker, highlights the significance of various features in the ranking task. The key features identified include:
+The feature importance plot below, generated using XGBRanker, highlights the significance of various features in the ranking task. 
+| ![Feature Importance Plot](./reports/figures/feature_importance.png) |
+|:--------------------------------------------------------------------:|
+| **Figure 5: Feature Importance from XGBRanker**                      |
 
-| ![Feature Importance Plot](./reports/figures/feature_importance.png) | ![Model Comparison Plot](./reports/figures/model_comparison.png) |
-|:--------------------------------------------------------------------:|:----------------------------------------------------------------:|
-| **Figure 5: Feature Importance from XGBRanker**                      | **Figure 6: NDCG Score Comparison Across Models**                |
+The key features identified include:
 
 - **prop_id:** The property identifier is the most important feature, indicating that certain properties inherently rank higher based on past data.
 - **review_count:** The number of reviews a property has received plays a significant role in its ranking.
@@ -112,7 +113,10 @@ The feature importance plot below, generated using XGBRanker, highlights the sig
 
 These features are essential for improving the performance of the AllRank model by providing relevant information for accurately ranking properties.
 
-### Figure 2: NDCG Score Comparison Across Models
+| ![Model Comparison Plot](./reports/figures/model_comparison.png) |
+|:----------------------------------------------------------------:|
+| **Figure 6: NDCG Score Comparison Across Models**                |
+
 The NDCG score comparison plot shows the performance of different models across various ranking positions (K5, K10, K20, K30). Key observations include:
 
 - **AllRank Neural Network:** This model consistently performs the best across all ranking positions, achieving the highest NDCG scores.
