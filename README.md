@@ -4,8 +4,8 @@
 Expedia Group, a prominent online travel agency, streamlines trip planning by providing a platform where users can compare prices, review amenities, and book accommodations through sophisticated recommendation and ranking systems. This project evaluates various machine learning models to efficiently prioritize the most relevant search results, enhancing user satisfaction and booking efficiency.
 
 ## Partners
-- __ Expedia Group
-- __ Constructor Academy
+- Expedia Group
+- Constructor Academy
 
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
@@ -16,7 +16,6 @@ Expedia Group, a prominent online travel agency, streamlines trip planning by pr
    - [Deep Learning Models](#deep-learning-models)
 5. [Results](#results)
 6. [Future Work](#future-work)
-7. [Acknowledgments](#acknowledgments)
 8. [Team Members](#team-members)
 9. [Blog Post](#blog-post)
 
@@ -37,18 +36,23 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 ## Dataset Description
 The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
-## Approach and Methodology
-To address the ranking challenge, we employed various machine learning and deep learning models, evaluated using the Normalized Discounted Cumulative Gain (NDCG) metric, which prioritizes user satisfaction by rewarding models that place the most relevant properties higher.
+## Data preprocessing and Feature selection
 
-## Feature selection
+Refer to doc "Feature_Selection_Documentation.md" for further details
+ 
+- Categorical Features: Target encoding for high-cardinality features.
+- Binary Features: One-hot encoding and retention of relevant indicators.
+- Ordinal Features: Handling of ratings and rankings.
+- Numerical Features: Standard scaling applied.
+- Excluded Features: Features used solely for relevance labeling and those with majority null values.
 
 ## Feature engineering based upon business logic
-Notebook, "FeatureEngineeringNewTargetRelevances_KS.ipynb," creates custom features to enhance target relevance. Key steps include:
+Notebook "FeatureEngineeringNewTargetRelevances_KS.ipynb," creates custom features to enhance target relevance. Key steps include:
 
 Relevance Calculation: Based on user clicks and transactions.
 - Categorization: For price buckets and review ratings.
 - Combined Features: Integrates clicks, price, ratings, and review counts.
-- Target Encoding: Encodes categorical based upon selected/target relevance.
+- Target Encoding: Encodes categorical based upon selected/targetrelevance.
 - Feature Selection: Chooses and retains the most relevant features.
 
 The saved data can be used for next steps for model training and evaluation
