@@ -36,11 +36,19 @@ Normalized Discounted Cumulative Gain (NDCG) is a ranking quality metric that co
 | Figure 1:  NDCG as a ranking quality metric         | Figure 2:     Relevance decreases with rank    |
 
 ## Dataset Description
-The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
+The Expedia RecTour research dataset used in this project includes 1 million searches over two months in 2021. It contains detailed information on booking details, hotel ratings, review counts, and amenities such as WiFi and parking. Let's look into booking data and clicks
+
+| ![Booking Window](./reports/figures/booking_window.png) | ![Number of Clicks](./reports/figures/clicks.png) |
+|:------------------------------------------------------:|:------------------------------------------------:|
+| **Figure 3:** Distribution of booking window within 90 days. | **Figure 4:** Distribution of number of clicks per search. |
+
+**Figure 1** shows that most bookings are made on the same day, with a significant decrease in bookings as the booking window extends up to 90 days. **Figure 2** illustrates that the majority of users tend to make only one click per search, suggesting that the top search results are highly relevant and meet user needs quickly.
+
+How are different amenitites influencing the user behaviour. Let's check this with correlation plot.
 
 | <img src="./reports/figures/correlation.png" alt="Correlation Plot" style="width: 50%; height: auto;"> |
 |:--------------------------------------------------------------------------------------------------------:|
-| **Figure 3: Correlation Matrix**                                                      |
+| **Figure 5: Correlation Matrix**                                                      |
 
 
 **Table1: Key Correlations**
@@ -55,7 +63,7 @@ The Expedia RecTour research dataset used in this project includes 1 million sea
 | **Low/No Correlation** | Child Count, Most Other Variables | The number of children doesn't significantly impact other features.      |
 | **Negative Correlation** | Is Free Cancellation, Price Bucket | Higher-priced properties are less likely to offer free cancellation.     |
 
-
+We focused on searches that led to clicks or bookings for the top 500 destinations, which helped us significantly reduce the training dataset size.
 
 ## Data preprocessing and Feature selection
 
@@ -101,7 +109,7 @@ conda activate environment_decisiontree
 The feature importance plot below, generated using XGBRanker, highlights the significance of various features in the ranking task. 
 | ![Feature Importance Plot](./reports/figures/feature_importance.png) |
 |:--------------------------------------------------------------------:|
-| **Figure 5: Feature Importance from XGBRanker**                      |
+| **Figure 6: Feature Importance from XGBRanker**                      |
 
 The key features identified include:
 
@@ -116,7 +124,7 @@ These features are essential for improving the performance of the AllRank model 
 
 | <img src="./reports/figures/model_comparison.png" alt="Model Comparison Plot" width="600" height="400"> |
 |:--------------------------------------------------------------------------------------------------------:|
-| **Figure 6: NDCG Score Comparison Across Models**                                                       |
+| **Figure 7: NDCG Score Comparison Across Models**                                                       |
 
 The NDCG score comparison plot shows the performance of different models across various ranking positions (K5, K10, K20, K30). Key observations include:
 
@@ -127,10 +135,7 @@ The NDCG score comparison plot shows the performance of different models across 
 The plot clearly demonstrates the effectiveness of the AllRank model in achieving higher NDCG scores, indicating better ranking of relevant properties.
 
 
-<p align="center">
-  <img src="./reports/figures/LossfunctionResult.png" alt="Comparison of NDCG@30 Scores for different Loss Functions" style="width:60%; height:auto;">
-</p>
-
+<img src="./reports/figures/LossfunctionResult.png" alt="Comparison of NDCG@30 Scores for different Loss Functions" style="width: 60%; height: auto;">
 
 The deep neural network & self attention (DNN+SA) based allRank  model generally outperforms the standard DNN model, highlighting the benefit of incorporating Self-Attention for ranking tasks in the Expedia RecTour dataset.
 
@@ -150,11 +155,14 @@ For more details, please read our [blog post](https://academy.constructor.org/bl
 - **Pandas** 🐼: Data manipulation and analysis
 - **NumPy** 🔢: Numerical computing
 - **Matplotlib** 📊: Plotting and visualization
+- **Seaborn** 📈: Statistical data visualization library based on Matplotlib, used for creating informative and attractive graphics
+- **Plotly** 📊: Interactive graphing library used for creating visualizations
 - **tqdm** ⏳: Progress bars for loops
 - **timeit** ⏱️: Time measuring tool
 - **hashlib** 🔒: Secure hash and message digest
 - **Dask** 🏭: Parallel computing with pandas-like syntax
 - **gc** 🗑️: Garbage collection interface
+- **Scikit-learn** 📘: Machine learning library for Python, used for building and evaluating models
 - **PyTorch** 🔥: Deep learning framework used in the allRank ranking algorithm
 
 ### Ranking Algorithms Implemented
