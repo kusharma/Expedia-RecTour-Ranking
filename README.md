@@ -59,17 +59,14 @@ Notebook "FeatureEngineeringNewTargetRelevances.ipynb," creates custom features 
 
 The saved data can be used for next steps for model training and evaluation
 
-## Machine learning libraries used
-- XGBoost
-- LightGBM
-- NN from sratch
-- allRank
-
-### Machine Learning Models
+## Machine Learning Models
 We began with decision tree-based models such as LightGBM and XGBRanker. These models helped us identify key features relevant to the ranking task.
 
-### Deep Learning Models
+## Deep Learning Models
 We then explored the allRank model, an open-source transformer-based model that enhances ranking by understanding the context of other properties. This model demonstrated the best performance on the Expedia RecTour dataset, leveraging a self-attention mechanism to learn item scores in the context of all other items present in the list.
+
+### Running allRank model
+To run the AllRank model, first navigate to the allRank directory. For instructions on running without Docker, refer to READEME_Updated.md. For instructions on running with Docker, refer to README.md.
 
 ## Results
 Our evaluation showed the following:
