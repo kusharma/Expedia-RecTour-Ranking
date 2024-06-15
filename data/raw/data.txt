@@ -1,2 +1,0 @@
-The data is CSV file containing patient information with different features coming from questionnaire pdf file. 
-

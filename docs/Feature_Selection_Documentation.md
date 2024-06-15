@@ -48,7 +48,4 @@ This document provides details on the pre-processing and selection of features u
 - `room_count` (99% == 1) # dropped as majority values are 1
 - `user_id`
 
-## Dataset
-- Current dataset includes 1 million queries.
-- [Access the dataset here](https://drive.google.com/drive/u/0/folders/15ix1_0ZB3JpEVesFtBYx4VA-Ue2qBBns).
-- File name: `millionrows_Top500Destinations.csv`
+

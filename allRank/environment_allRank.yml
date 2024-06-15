@@ -1,4 +1,4 @@
-name: genai_general
+name: environment_allRank_env
 channels:
   - pytorch
   - nvidia
